@@ -1,3 +1,27 @@
+@mixin titulosH2 {
+  color: rgb(116, 35, 255);
+  font-weight: bold;
+}
+
+.headerH2 {
+  @include titulosH2;
+}
+
+$fondocolor: (
+  "diurno" : white,
+  "nocturno" : rgb(115, 1, 1),
+);
+
+
+body {
+  background-color: map-get($fondocolor, "diurno"),
+};
+
+.textColor {
+  color: rgb(154, 201, 242);
+}
+
+
 .ulAnim li {
   :hover {
     animation: divAnim 2s ease 0s 1 normal forwards;
@@ -7,7 +31,7 @@
 }
 
 .divAnim {
-  color: rgb(154, 201, 242);
+  @extend .textColor;
   $shadowcolor: rgb(8, 20, 61);
   &:hover {
     animation: divAnimation 1s ease 0s 1 normal forwards;
