@@ -1,5 +1,6 @@
 a {
   text-decoration: none;
+  color: rgb(116, 35, 255);
 }
 
 .headerH2 {
@@ -15,7 +16,7 @@ body {
   color: rgb(154, 201, 242);
 }
 
-.ulAnim li :hover {
+.ulAnim li:hover {
   animation: divAnim 2s ease 0s 1 normal forwards;
   transform: scale(1.1);
   transition: transform 0.75s;

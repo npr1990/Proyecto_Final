@@ -1,21 +1,22 @@
- a {
-    text-decoration: none; 
-}
-
-
-
-@mixin titulosH2 {
+@mixin colortexto {
   color: rgb(116, 35, 255);
-  font-weight: bold;
 }
+
+a {
+  text-decoration: none;
+  @include colortexto;
+}
+
+
 
 .headerH2 {
-  @include titulosH2;
+  @include colortexto;
+  font-weight: bold;
 }
 
 $fondocolor: (
   "diurno": white,
-  "nocturno": rgb(115, 1, 1),
+  "nocturno": rgb(62, 62, 62),
 );
 
 body {
@@ -27,7 +28,7 @@ body {
 }
 
 .ulAnim li {
-  :hover {
+  &:hover {
     animation: divAnim 2s ease 0s 1 normal forwards;
     transform: scale(1.1);
     transition: transform 0.75s;
