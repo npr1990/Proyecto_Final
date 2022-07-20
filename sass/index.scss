@@ -1,3 +1,9 @@
+ a {
+    text-decoration: none; 
+}
+
+
+
 @mixin titulosH2 {
   color: rgb(116, 35, 255);
   font-weight: bold;
@@ -8,19 +14,17 @@
 }
 
 $fondocolor: (
-  "diurno" : white,
-  "nocturno" : rgb(115, 1, 1),
+  "diurno": white,
+  "nocturno": rgb(115, 1, 1),
 );
 
-
 body {
-  background-color: map-get($fondocolor, "diurno"),
-};
+  background-color: map-get($fondocolor, "diurno");
+}
 
 .textColor {
   color: rgb(154, 201, 242);
 }
-
 
 .ulAnim li {
   :hover {
