@@ -21,8 +21,14 @@
     />
     <!--fuente-->
     <!--Meta-->
-    <meta name="keywords" content="abogados, abogado, demanda, denuncia, derecho, código civil, escritos, fuero penal, fuero civil, fuero comercial, fuero laboral, fuero penal económico, fuero contenciosos administrativo, fuero seguridad social, fuero superior tribunal provincial, corte suprema de justicia">
-    <meta name="description" content="Asesoramiento legal / Jurisprudencia y escritos actualizados">
+    <meta
+      name="keywords"
+      content="abogados, abogado, demanda, denuncia, derecho, código civil, escritos, fuero penal, fuero civil, fuero comercial, fuero laboral, fuero penal económico, fuero contenciosos administrativo, fuero seguridad social, fuero superior tribunal provincial, corte suprema de justicia"
+    />
+    <meta
+      name="description"
+      content="Asesoramiento legal / Jurisprudencia y escritos actualizados"
+    />
     <!--Meta-->
     <title>Servicios Legales</title>
     <!-- BOOTSTRAP -->
@@ -31,6 +37,10 @@
       rel="stylesheet"
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
     <!-- BOOTSTRAP -->
 
@@ -41,93 +51,125 @@
 
   <!--Inicio Body-->
   <body>
-      <!--inicio header-->
-      <header>
-        <div
-          class="px-4 py-2 bg-dark text-white d-flex flex-wrap align-items-center justify-content-between"
-        >
-          <h1><a href="./index.html">Servicios Legales</a></h1>
-          <nav>
-            <ul
-              class="nav col-12 col-md-auto my-2 justify-content-center my-md-0 text-small ulAnim"
+    <!--inicio header-->
+    <header>
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid bg-dark rounded-3 py-4">
+          <a class="navbar-brand text-white" href="">
+            <i class="bi bi-app"></i>
+            <span>Servicios Legales</span>
+          </a>
+
+          <!--boton de menu-->
+          <div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#menu"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
             >
-              <li>
-                <a class="mx-2 text-white" href="pages/penal.html">Penal</a>
-              </li>
-              <li>
-                <a class="mx-2 text-white" href="pages/contratos.html"
-                  >Contratos</a
-                >
-              </li>
-              <li>
-                <a class="mx-2 text-white" href="pages/societario.html"
-                  >Societario</a
-                >
-              </li>
-              <li>
-                <a class="mx-2 text-white" href="pages/contacto.html"
-                  >Contacto</a
-                >
-              </li>
-            </ul>
-          </nav>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--elementos de menu colapsable-->
+
+            <div class="collapse navbar-collapse" id="menu">
+              <ul class="navbar-nav ulAnim">
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="pages/penal.html"
+                    >Penal</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="pages/contratos.html"
+                    >Contratos</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="pages/societario.html"
+                    >Societario</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="pages/contacto.html"
+                    >Contacto</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </header>
-      <!--fin header-->
+      </nav>
+    </header>
 
-      <!--inicio main-->
-      <div class="d-flex justify-content-between">
-        <main class="flex-fill mx-4 py-5 h-100">
-          <h2 class="pb-2 border-bottom headerH2">Inicio</h2>
-          <div class="row g-4 py-5 row-cols-md-1 row-cols-lg-3 ">
-            <div class="flex-fill m-3 p-5 bg-dark rounded-3 divAnim">
-              <h2>Materia</h2>
-              <ul>
-                <li><a href="./pages/penal.html">Penal</a></li>
-                <li><a href="./pages/contratos.html">Contratos</a></li>
-                <li><a href="./pages/societario.html">Societario</a></li>
-              </ul>
-            </div>
-
-            <div class="flex-fill p-5 m-3 bg-dark rounded-3 divAnim">
-              <h2>Mas Buscados</h2>
-              <ul>
-                <li>CD Despido</li>
-                <li>Locacion</li>
-                <li>Estatuto SAU</li>
-              </ul>
-            </div>
-          </div>
-          <!--Inicio Contacto-->
-
-          <div class="h-100 p-5 m-3 bg-dark rounded-3 divAnim">
-            <h3>Contacto</h3>
-            <ul>
-              <li>Email</li>
-              <li>Lknd/legalService</li>
-              <li>9999 9999999</li>
+    <!--inicio main-->
+    <div class="d-flex justify-content-between">
+      <main class="flex-fill mx-4 py-5 h-100">
+        <h2 class="pb-2 border-bottom">Inicio</h2>
+        <div class="row g-4 py-5 row-cols-md-1 row-cols-lg-3">
+          <div class="flex-fill m-3 p-5 text-white bg-dark rounded-3  divAnim">
+            <h2>Materia</h2>
+            <ul class="p-0 ulAnim">
+              <li class="simpleLi"><a href="./pages/penal.html" class="nav-link">Penal</a></li>
+              <li class="simpleLi"><a href="./pages/contratos.html" class="nav-link">Contratos</a></li>
+              <li class="simpleLi"><a href="./pages/societario.html" class="nav-link">Societario</a></li>
             </ul>
           </div>
 
-          <!--Fin Contacto-->
-        </main>
+          <div class="flex-fill p-5 m-3 text-white bg-dark rounded-3 divAnim">
+            <h2>Mas Buscados</h2>
+            <ul class="p-0">
+              <li class="simpleLi">CD Despido</li>
+              <li class="simpleLi">Locacion</li>
+              <li class="simpleLi">Estatuto SAU</li>
+            </ul>
+          </div>
+        </div>
 
-        <!--  inicio sidebar -->
-        <aside class="asideMediaQuery">
+        <div class="flex-fill m-3">
           <img
-            src="./assets/images/palacio.png"
-            alt="palacio de justicia de la nacion"
+            class="rounded-3 w-100"
+            src="./assets/images/fd.png"
+            alt="fachada uba derecho"
           />
-        </aside>
-        <!-- fin sidebar-->
-      </div>
+        </div>
+      </main>
 
-      <!--fin main-->
+      <!--  inicio sidebar -->
+      <aside class="asideMediaQuery">
+        <img
+          src="./assets/images/palacio.png"
+          alt="palacio de justicia de la nacion"
+        />
+      </aside>
+      <!-- fin sidebar-->
+    </div>
 
-      <!--inicio footer-->
-      <footer class="text-center text-muted">
-        Copyright © 2022 - Servicios Legales - Todos los derechos reservados
+    <!--fin main-->
+
+    <!--inicio footer-->
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <ul class="nav col-md-4">
+          <li>
+            <i class="bi bi-envelope-fill mx-3"></i
+            >ServiciosLegalesNPR@gmail.com
+          </li>
+          <li>
+            <i class="bi bi-linkedin mx-3"></i
+            >linkedin.com/in/nahuelplensaabogado/
+          </li>
+          <li><i class="bi bi-telephone-fill mx-3"></i>0800 33 347225</li>
+        </ul>
+        <span class="col-md-4 mb-0 text-muted">Servicios Legales</span>
+        <span>Copyright © 2022</span>
       </footer>
+    </div>
     <!--fin footer-->
     <!--bootstrap script-->
     <script

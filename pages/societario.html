@@ -22,6 +22,10 @@
     <title>Servicios Legales | Societario</title>
     <!-- bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
     <!-- bootstrap-->
 
     <!-- CSS/SASS  -->
@@ -33,56 +37,89 @@
     
     <div class="col-md-12">
       <!--inicio header-->
-      <header> 
-        <div class="px-4 py-2 bg-dark text-white d-flex flex-wrap align-items-center justify-content-between">
-          <h1><a href="../index.html">Servicios Legales</a></h1>
-          <nav>
-            <ul class="nav col-12 col-md-auto my-2 justify-content-center my-md-0 text-small ulAnim">
-              <li>
-                <a class="mx-2 text-white" href="../index.html">Inicio</a>
-              </li>
-              <li>
-                <a class="mx-2 text-white" href="./penal.html">Penal</a>
-              </li>
-              <li >
-              <a class="mx-2 text-white" href="./contratos.html">Contratos</a>
-             </li>
-              <li >
-              <a class="mx-2 text-white" href="./societario.html">Societario</a>
-              </li>
-              <li >
-               <a class="mx-2 text-white" href="./contacto.html">Contacto</a>
-             </li>
-            </ul>
-          </nav>
-        </div>
+      <header>
+        <nav class="navbar navbar-expand-md">
+          <div class="container-fluid bg-dark rounded-3 py-4">
+            <a class="navbar-brand text-white" href="">
+              <i class="bi bi-app"></i>
+              <span>Servicios Legales</span>
+            </a>
+  
+            <!--boton de menu-->
+            <div>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+  
+              <!--elementos de menu colapsable-->
+  
+              <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ulAnim">
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="../index.html"
+                      >Inicio</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="./penal.html"
+                      >Penal</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="./contratos.html"
+                      >Contratos</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="./societario.html"
+                      >Societario</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="./contacto.html"
+                      >Contacto</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
       </header>
       <!--fin header-->
       <div class="d-flex justify-content-between">
         <main class="d-flex flex-column align-items-center w-100 h-100 mx-4">
-          <h2 class="pb-2 w-100 py-5 border-bottom headerH2">Societario</h2>
-          <p class="h-100 p-5 m-3 text-white bg-dark rounded-3">
+          <h2 class="pb-2 w-100 py-5 border-bottom">Societario</h2>
+          <p class="h-100 p-5 m-3 text-white bg-dark rounded-3 divAnim">
             El Derecho de sociedades, Derecho societario o Derecho corporativo o
             Derecho empresarial es la rama del Derecho privado que se ocupa del
             empresario social, es decir, la sociedad como sujeto del tráfico
             empresarial.
           </p>
           <div>
-            <div class="h-100 p-5 m-3 text-white bg-dark rounded-3">
+            <div class="h-100 p-5 m-3 text-white bg-dark rounded-3 divAnim">
               <h2>Modelos de Escritos</h2>
-              <ul>
-                <li>Cesion de cuotas</li>
-                <li>Acta de asamblea</li>
-                <li>Incremento de Capital</li>
+              <ul class="p-0">
+                <li class="simpleLi">Cesion de cuotas</li>
+                <li class="simpleLi">Acta de asamblea</li>
+                <li class="simpleLi">Incremento de Capital</li>
               </ul>
             </div>
 
-            <div class="h-100 p-5 m-3 text-white bg-dark rounded-3">
+            <div class="h-100 p-5 m-3 text-white bg-dark rounded-3 divAnim">
               <h2>Instrumentos Constitutivos</h2>
-              <ul>
-                <li>Modelo de SAU</li>
-                <li>Modelo de SRL</li>
-                <li>Modelo de SAS</li>
+              <ul class="p-0">
+                <li class="simpleLi">Modelo de SAU</li>
+                <li class="simpleLi">Modelo de SRL</li>
+                <li class="simpleLi">Modelo de SAS</li>
               </ul>
             </div>
           </div>
@@ -95,10 +132,18 @@
         </aside>
       </div>
     <!--inicio footer-->
-    <footer class="text-center text-muted">
-      Copyright © 2022 - Servicios Legales - Todos los derechos reservados
-    </footer>
-    <!--fin footer-->
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <ul class="nav col-md-4">
+          <li><i class="bi bi-envelope-fill mx-3"></i>ServiciosLegalesNPR@gmail.com</li>
+          <li><i class="bi bi-linkedin mx-3"></i>linkedin.com/in/nahuelplensaabogado/</a></li>
+          <li><i class="bi bi-telephone-fill mx-3"></i>0800 33 347225</li>
+        </ul>
+        <span class="col-md-4 mb-0 text-muted" >Servicios Legales</span>
+        <span >Copyright © 2022</span>
+      </footer>
+    </div>
+      <!--fin footer-->
     <!--bootstrap script-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
